@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     "corsheaders", # new
 
-    'todo'
+    'todos'
 ]
 
 REST_FRAMEWORK = {
@@ -138,8 +138,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles" # new
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = (
-"http://localhost:3000",
-"http://localhost:8000",
+    "http://localhost:3000",
+    "http://localhost:8000",
 )
 
-CSRF_TRUSTED_ORIGINS = ["localhost:3000"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
